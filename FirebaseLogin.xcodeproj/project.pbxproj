@@ -24,8 +24,6 @@
 
 /* Begin PBXFileReference section */
 		1781BE08E703C14C3B096251 /* Pods-FirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLogin.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLogin/Pods-FirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
-		2011CA32A4ECF057A3C6E723 /* Pods-FirebaseLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLoginUITests/Pods-FirebaseLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		280BE08548B8666C34D296E9 /* Pods-FirebaseLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLoginTests/Pods-FirebaseLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F09126D231A280300C465BD /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F091270231A280300C465BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F091272231A280300C465BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +39,9 @@
 		6FA437B6231EF7CC0058B31A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		6FDEA1E3231D90CF00EB292A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		723A199246BD14F97B64C9C0 /* Pods_FirebaseLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7343300E902469FFC13AA7D8 /* Pods-FirebaseLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLoginTests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLoginTests/Pods-FirebaseLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A80420B33634E417585B4AC /* Pods_FirebaseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB125BC6F6941EEC847814A2 /* Pods_FirebaseLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C553D64B76CE8D7EBBF9CC26 /* Pods-FirebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLogin.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLogin/Pods-FirebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
-		E59B5A36280F01E24B24F954 /* Pods-FirebaseLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLoginUITests/Pods-FirebaseLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +107,6 @@
 			children = (
 				1781BE08E703C14C3B096251 /* Pods-FirebaseLogin.debug.xcconfig */,
 				C553D64B76CE8D7EBBF9CC26 /* Pods-FirebaseLogin.release.xcconfig */,
-				280BE08548B8666C34D296E9 /* Pods-FirebaseLoginTests.debug.xcconfig */,
-				7343300E902469FFC13AA7D8 /* Pods-FirebaseLoginTests.release.xcconfig */,
-				2011CA32A4ECF057A3C6E723 /* Pods-FirebaseLoginUITests.debug.xcconfig */,
-				E59B5A36280F01E24B24F954 /* Pods-FirebaseLoginUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
