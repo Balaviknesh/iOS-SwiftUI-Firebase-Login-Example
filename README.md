@@ -36,5 +36,7 @@ _*How to run this example project*_
 * Build and Run 
 
 Note that SwiftUI features available and works only on Xcode 11
+
 Runs only on devices with iOS13 or above
+
 [Screenshots](https://github.com/Balaviknesh/iOS-SwiftUI-Firebase-Login-Example/tree/master/ScreenShots) 
