@@ -35,4 +35,6 @@ _*How to run this example project*_
 * GoogleService-Info.plist to the project folder 
 * Build and Run 
 
-_*Screenshots*_
+Note that SwiftUI features available and works only on Xcode 11
+
+[Screenshots](https://github.com/Balaviknesh/iOS-SwiftUI-Firebase-Login-Example/tree/master/ScreenShots) 
