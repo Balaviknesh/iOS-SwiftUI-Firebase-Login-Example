@@ -40,3 +40,7 @@ Note that SwiftUI features available and works only on Xcode 11
 Runs only on devices with iOS13 or above
 
 [Screenshots](https://github.com/Balaviknesh/iOS-SwiftUI-Firebase-Login-Example/tree/master/ScreenShots) 
+
+
+![alt text](https://cdn.iconscout.com/icon/free/png-256/firebase-1-282796.png) ![alt text](https://cdn.macrumors.com/article-new/2019/01/ios13icon.jpg) ![alt text](https://www.intego.com/mac-security-blog/wp-content/uploads/2016/02/Apple_Swift_logo.png) ![alt text](https://developer.apple.com/assets/elements/icons/swiftui/swiftui-128x128_2x.png)
+
