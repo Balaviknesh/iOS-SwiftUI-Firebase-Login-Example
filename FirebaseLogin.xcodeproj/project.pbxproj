@@ -17,7 +17,6 @@
 		6F8A59D6231DA8F1004CED63 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A59D5231DA8F1004CED63 /* SignInView.swift */; };
 		6F8A59D8231DF54E004CED63 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A59D7231DF54E004CED63 /* SignUpView.swift */; };
 		6F8EE5C723221F1E006BEF89 /* AppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EE5C623221F1E006BEF89 /* AppTitleView.swift */; };
-		6FA437B7231EF7CC0058B31A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA437B6231EF7CC0058B31A /* HomePageView.swift */; };
 		6FDEA1E4231D90CF00EB292A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEA1E3231D90CF00EB292A /* WelcomeView.swift */; };
 		84FF4856A2B7688FF4EF638D /* Pods_FirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A80420B33634E417585B4AC /* Pods_FirebaseLogin.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		6F8A59D5231DA8F1004CED63 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		6F8A59D7231DF54E004CED63 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		6F8EE5C623221F1E006BEF89 /* AppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleView.swift; sourceTree = "<group>"; };
-		6FA437B6231EF7CC0058B31A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		6FDEA1E3231D90CF00EB292A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		723A199246BD14F97B64C9C0 /* Pods_FirebaseLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A80420B33634E417585B4AC /* Pods_FirebaseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +86,6 @@
 				6FDEA1E3231D90CF00EB292A /* WelcomeView.swift */,
 				6F8A59D5231DA8F1004CED63 /* SignInView.swift */,
 				6F8A59D7231DF54E004CED63 /* SignUpView.swift */,
-				6FA437B6231EF7CC0058B31A /* HomePageView.swift */,
 				6F8EE5C623221F1E006BEF89 /* AppTitleView.swift */,
 			);
 			path = FirebaseLogin;
@@ -243,7 +240,6 @@
 				6F8EE5C723221F1E006BEF89 /* AppTitleView.swift in Sources */,
 				6F091276231A280300C465BD /* FirebaseLogin.xcdatamodeld in Sources */,
 				6F8A59D8231DF54E004CED63 /* SignUpView.swift in Sources */,
-				6FA437B7231EF7CC0058B31A /* HomePageView.swift in Sources */,
 				6F8A59D6231DA8F1004CED63 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

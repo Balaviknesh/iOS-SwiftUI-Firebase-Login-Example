@@ -9,7 +9,28 @@
 import SwiftUI
 import Firebase
 
+struct actIndSignin: UIViewRepresentable {
+    @Binding var shouldAnimate: Bool
+    
+    func makeUIView(context: Context) -> UIActivityIndicatorView {
+        return UIActivityIndicatorView()
+    }
+
+    func updateUIView(_ uiView: UIActivityIndicatorView,
+                      context: Context) {
+        if self.shouldAnimate {
+            uiView.startAnimating()
+        } else {
+            uiView.stopAnimating()
+        }
+    }
+}
+
+
 struct SignInView: View {
+    
+    
+    @State private var shouldAnimate = false
     
     @Environment(\.presentationMode) var presentationMode
     @State var emailAddress: String = ""
@@ -49,6 +70,9 @@ struct SignInView: View {
     var body: some View {
         
                     VStack {
+                        
+                        
+                      
                             
                         AppTitleView(Title: "Sign In")
 
@@ -68,7 +92,9 @@ struct SignInView: View {
 
                             Button(action: {
 
+                                self.shouldAnimate = true
                             self.sayHelloWorld(email:self.emailAddress, password:self.password)
+                                
 
                             }
                             ) {
@@ -98,6 +124,10 @@ struct SignInView: View {
 
                             Text(errorText).frame(minWidth: 0, maxWidth: .infinity, alignment: .topLeading)
 
+                            
+                           actIndSignin(shouldAnimate: self.$shouldAnimate)
+                                                
+                                          
 
                             if (!verifyEmail) {
 
@@ -114,7 +144,12 @@ struct SignInView: View {
                                 }) {
 
                                 Text("Send Verify Email Again")
+                                    
+                                    
+                                   
                                 }
+                                
+                                
 
                             }
 
@@ -138,12 +173,17 @@ struct SignInView: View {
     func sayHelloWorld(email: String, password: String) {
 
         
+               
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
+            
+           
 
 
         if let error = error
             {
             self.errorText = error.localizedDescription
+                self.shouldAnimate = false
+
             return
             }
 
@@ -157,6 +197,7 @@ struct SignInView: View {
         if(!self.verifyEmail)
             {
             self.errorText = "Please verify your email"
+            self.shouldAnimate = false
             return
             }
 
@@ -166,9 +207,12 @@ struct SignInView: View {
             self.errorText = ""
             self.onDismiss()
             self.presentationMode.wrappedValue.dismiss()
+            self.shouldAnimate = false
 
         }
 
+        
+        
         
         }
 

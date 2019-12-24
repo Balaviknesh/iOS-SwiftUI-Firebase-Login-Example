@@ -10,7 +10,22 @@ import SwiftUI
 import Firebase
 
 
+struct actIndSignup: UIViewRepresentable {
+    @Binding var shouldAnimate: Bool
+    
+    func makeUIView(context: Context) -> UIActivityIndicatorView {
+        return UIActivityIndicatorView()
+    }
 
+    func updateUIView(_ uiView: UIActivityIndicatorView,
+                      context: Context) {
+        if self.shouldAnimate {
+            uiView.startAnimating()
+        } else {
+            uiView.stopAnimating()
+        }
+    }
+}
 struct SignUpView: View {
     
     @Environment(\.presentationMode) var presentationMode
@@ -19,6 +34,7 @@ struct SignUpView: View {
     @State var agreeCheck: Bool = false
     @State var errorText: String = ""
     @State private var showAlert = false
+    @State private var shouldAnimate = false
     
     var alert: Alert {
         
@@ -61,6 +77,7 @@ struct SignUpView: View {
                         
                         if(self.agreeCheck){
                             print("Printing outputs" + self.emailAddress, self.password  )
+                            self.shouldAnimate = true
                             self.sayHelloWorld(email:self.emailAddress, password:self.password)
                         }
                         else{
@@ -73,6 +90,8 @@ struct SignUpView: View {
                     }
                 
                     Text(errorText).frame(minWidth: 0, maxWidth: .infinity, alignment: .topLeading)
+                
+                    actIndSignup(shouldAnimate: self.$shouldAnimate)
                 
                      Spacer()
 
@@ -95,6 +114,7 @@ struct SignUpView: View {
              
                 let errorText: String  = error?.localizedDescription ?? "unknown error"
                 self.errorText = errorText
+                
               return
             }
             
@@ -104,6 +124,8 @@ struct SignUpView: View {
                   return
                 }
                 self.showAlert.toggle()
+                
+                self.shouldAnimate = false
                 
             }
             
